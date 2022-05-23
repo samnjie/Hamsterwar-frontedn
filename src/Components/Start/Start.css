@@ -1,0 +1,36 @@
+.home-class {
+  padding: 4em;
+  background-color: #282c22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-class h1 {
+  font-size: 28px;
+}
+
+.rulse {
+  background-color: #282c22;
+}
+
+.rulse ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.text-deco {
+  color: #fcd448;
+  text-decoration: none;
+}
+
+.battle-button {
+  background-color: #fcd448;
+  border-radius: 1.1875rem;
+  width: 14rem;
+  height: 2rem;
+}
+
+.battle-button a {
+  font-size: 22px;
+  color: rgb(8 7 4);
+}

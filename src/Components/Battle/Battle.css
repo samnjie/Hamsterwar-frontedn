@@ -1,0 +1,8 @@
+.battle-container {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7em;
+  justify-content: space-evenly;
+}
