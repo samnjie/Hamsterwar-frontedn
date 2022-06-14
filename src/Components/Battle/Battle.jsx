@@ -3,7 +3,7 @@ import Card from "./Card";
 import { useState, useEffect } from "react";
 
 const Battle = (props) => {
-  const [hamsterOne, setHamsterOne] = useState(null);
+  const [hamsterOne, setHamsterOne] = useState(null);//..
   const [hamsterTwo, setHamsterTwo] = useState(null);
   const [voted, setVoted] = useState(false);
 
