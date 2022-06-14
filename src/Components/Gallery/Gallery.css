@@ -1,15 +1,88 @@
-.gallery-container {
-  display: flex;
-  justify-content: center;
-  background-color: aqua;
+.gallery {
+  margin: 3vw 0;
 }
 
-.grid-container {
+.grid {
+  width: 86vw;
   display: grid;
-  grid-template-columns: repeat(3, 15em);
-  justify-content: space-around;
-  row-gap: 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  margin: 1em auto;
+}
+
+.gallery-card,
+.add-new {
+  width: 20vw;
+  height: 25vw;
+  /* background-image: url("../../media/paper.jpg"); */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.top-card {
   width: 100%;
-  margin-top: 5em;
-  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-card hr {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.gallery-card .under {
+  margin: 0.5em auto;
+  width: 76%;
+}
+
+.gallery-card img.star {
+  width: 10%;
+}
+
+.gallery-card h3 {
+  font-size: 2vw;
+  margin-top: -0.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.gallery-card img.hamster-pic {
+  margin-top: 1vw;
+  width: 75%;
+  height: 60%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.gallery-card:hover,
+.add-new:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 10;
+  height: 30vw;
+}
+
+.add-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-new .plus {
+  font-size: 8vw;
+}
+
+.add-new h3 {
+  text-transform: uppercase;
+  font-size: 2.2vw;
+  letter-spacing: 0.03em;
+}
+
+.more-info {
+  margin-bottom: 10px;
 }

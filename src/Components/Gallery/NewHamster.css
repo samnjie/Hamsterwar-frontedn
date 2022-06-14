@@ -1,0 +1,84 @@
+.new-hamster {
+  width: 100vw;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-hamster .lightbox {
+  width: 50vw;
+  height: 90vh;
+  /* background-image: url("../../media/paper.jpg"); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-hamster .lightbox h3 {
+  font-size: 3.5vw;
+  margin-top: -0.2em;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  margin-bottom: 3vh;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway";
+  font-size: 3.5vh;
+}
+
+input[type="text"] {
+  width: 30vw;
+  height: 5vh;
+  font-family: "Raleway";
+  margin-bottom: 1vh;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.new-hamster .lightbox .close {
+  font-family: "Smokum";
+  font-size: 4vw;
+  position: absolute;
+  top: 5vh;
+  left: 71vw;
+  color: black;
+  transition: 0.2s;
+}
+
+.new-hamster .lightbox .close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.new-hamster p {
+  font-size: 2vw;
+}
+
+.ok-btn {
+  margin-top: 2vh;
+}
+
+p.msg {
+  color: rgb(236, 1, 1);
+  font-size: 1vw;
+}
+
+p.correct {
+  color: rgb(236, 1, 1);
+  font-size: 1.6vw;
+}

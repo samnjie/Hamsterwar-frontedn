@@ -1,25 +1,35 @@
 import "./Card.css";
 
 function Card(props) {
+  const { hamster, vote, voted } = props;
+
+  const imgSrc = "/img/" + hamster.imgName;
+
   return (
     <div className="card-container">
       <div className="image-container">
-        Här är det tänkt att bilden ska komma
+        <img src={imgSrc} alt={imgSrc} className="card-image" />
       </div>
 
       <div className="card-title">
-        <h3> {props.title} </h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley
-        </p>
+        <h3> {hamster.name} </h3>
+        <p>Age : {hamster.age}</p>
+        <p>Favourite food : {hamster.favFood}</p>
+        <p>Loves : {hamster.loves}</p>
       </div>
-      <div className="btn">
-        <button>
-          <a>Vote!</a>
-        </button>
-      </div>
+
+      {!voted ? (
+        <div className="btn">
+          <button onClick={() => vote(hamster.id)}>
+            <a>Vote!</a>
+          </button>
+        </div>
+      ) : (
+        <div className="btn">
+          <button>Wins : {hamster.wins}</button>
+          <button>Defeats : {hamster.defeats}</button>
+        </div>
+      )}
     </div>
   );
 }
